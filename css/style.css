@@ -152,7 +152,6 @@ hr {
     justify-content: center;
     display: none;
     height: min-content;
-    width: fit-content;
     color: black;
     border-radius: 5px;
     background-color: white;
@@ -330,3 +329,28 @@ hr {
 }
 
 
+.heroSection {
+    background-image: url("../images/Hero_banner.jpg");
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.heroMsg {
+    align-items: center;
+    background-color: white;
+    color: black;
+    display: flex;
+    height: 40px;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.heroMsg a {
+    color: #007185;
+}
