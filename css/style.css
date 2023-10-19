@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 body {
     background-color: #E3E6E6;
@@ -9,63 +10,51 @@ body {
 a {
     text-decoration: none;
 }
-
 header {
     width: 100%;
 }
-
 nav {
     white-space: nowrap;
     width: 100%;
     height: 60px;
     background-color: #17202c;
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
-hr {
-    margin: 5px 0;
+.border {
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.border:hover {
+    border: 1px solid white;
 }
 .brand {
     margin: auto 15px;
     padding-left: 10px;
 }
 .brand img {
-    width: 100px;
+    width: 6rem;
     height: 40px;
-    border: 1px solid transparent;
 }
-
-.brand img:hover {
-    border: 1px solid white;
-    border-radius: 2px;
-}
-
 .delivaryCountry {
     display: flex;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     margin: auto;
     padding: 5px;
     margin-right: 5px;
-    border: 1px solid transparent;
-}
-.delivaryCountry:hover {
-    border: 1px solid white;
-    border-radius: 2px;
 }
 .delivaryCountry a {
     color: white;
 }
 .delivaryCountry span {
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     margin-left: 1rem;
 }
+
 .delivaryCountry h2 {
     font-size: 1rem;
 }
-
 .searchArea {
     width: 80%;
     height: 35px;
@@ -111,7 +100,7 @@ hr {
 .iconContainer .fa-caret-down {
     color: gray;
     margin-right: 10px;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
 }
 .searchAreaInput {
     width: 100%;
@@ -120,7 +109,7 @@ hr {
     font-size: 1.2rem;
     height: 35px;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 0.80rem;
     border: 0;
     outline: none;
 }
@@ -129,25 +118,21 @@ hr {
     border: 0;
     color: rgb(63, 63, 63);
     background-color: rgb(253, 187, 72);
-    padding: 18px 10px;
+    padding: 1rem 0.8rem;
 }
 .seacrhIcon:hover{
     background-color: rgb(255, 162, 0);
 }
 
 .usaFlag img {
-    width: 20px;
+    width: 1.2rem;
 }
 .languageSelector {
     margin-left: 5px;
     color: white;
-    font-size: 0.85rem;
-    border: 1px solid transparent;
-    border-radius: 2px;
+    font-size: 0.80rem;
     padding: 15px;
-}
-.languageSelector:hover {
-    border: 1px solid white;
+    position: relative;
 }
 .secondaryLanguage {
     padding: 15px;
@@ -159,7 +144,6 @@ hr {
     border-radius: 5px;
     background-color: white;
 }
-
 .languageSelector:hover .secondaryLanguage {
     position: absolute;
     margin-top: 15px;
@@ -168,7 +152,7 @@ hr {
 }
 .langTitle {
     opacity: 0.7;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     margin-top: 10px;
 }
 .secondaryLanguage form {
@@ -200,13 +184,9 @@ hr {
     display: flex;
     margin-left: 5px;
     color: white;
-    font-size: 0.85rem;
-    border: 1px solid transparent;
-    border-radius: 2px;
+    font-size: 0.80rem;
+    position: relative;
     padding: 5px;
-}
-.signInAccounts:hover {
-    border: 1px solid white;
 }
 .signInAccounts a {
     color: white;
@@ -274,35 +254,25 @@ hr {
     color: orange;
     text-decoration: underline;
 }
-
-
 .returnOrders a {
     color: white;
 }
 .returnOrders {
     display: flex;
     padding: 5px;
-    font-size: 0.85rem;
-    border: 1px solid transparent;
+    font-size: 0.80rem;
 }
 .returnOrders h2 {
     font-size: 1rem;
-}
-.returnOrders:hover {
-    border-radius: 2px;
-    border: 1px solid white;
-
 }
 .cart a{
     color: white;
     padding: 12px;
     border-radius: 2px;
-    border: 1px solid transparent;
 }
-.cart a:hover {
-    border: 1px solid white;
+.cart .fa-cart-shopping {
+    font-size: 1.5rem;
 }
-
 .menu_bar {
     padding-left: 5px;
     align-items: center;
@@ -320,18 +290,10 @@ hr {
 .menu_bar a {
     color: white;
     padding: 5px;
-    border-radius: 2px;
-    border: 1px solid transparent;
-}
-.menu_bar a:hover {
-    border: 1px solid white;
-
 }
 .menu_bar .fa-bars {
     margin-right: 5px;
 }
-
-
 .heroSection {
     background-image: url("../images/Hero_banner.jpg");
     background-size: cover;
@@ -340,7 +302,6 @@ hr {
     justify-content: center;
     align-items: flex-end;
 }
-
 .heroMsg {
     align-items: center;
     background-color: white;
@@ -350,50 +311,70 @@ hr {
     width: 90%;
     justify-content: center;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     margin-bottom: 25px;
     font-weight: 600;
 }
 .heroMsg a {
     color: #007185;
 }
-
 .shopSection {
-    margin-top: 20px;
+    width: 92%;
+    margin: auto;
+    margin-top: 1rem;
     background-color: #E3E6E6;
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
+    gap: 0.80rem;
 }
 .box {
+    display: grid;
+    grid-template-columns: auto auto;
     height: 420px;
     width: 23%;
     background-color: white;
-    padding: 20px 0 15px;
-    margin-top: 20px;
+    padding: 20px 0 10px;
     overflow: hidden;
 }
 .boxContent  {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
+    padding: 10px;
 }
-
+.boxContent h2 {
+    padding-left: 1rem;
+    padding-bottom: 0.80rem;
+}
 .boxImg {
     width: 100%;
-    margin-top: 0.85rem;
-    margin-bottom: 0.85rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
     overflow: hidden;
-    background-size: cover;
-    height: 300px;
+    min-height: min-content;
 }
-.imageGallary img {
-    width: 90%;
-    margin: 3px;
+.boxImg img {
+    margin: 0 auto;
+    width: 100%;
 }
-
+.boxContent a {
+    padding-left: 1rem;
+    color: black;
+}
+.boxContent .seeMoreHyperLink {
+    margin-top: 2rem;
+}
+.imageGallary {
+    max-width: none;
+    height: 100%;
+    left: -9999px;
+    right: -9999px;
+}
+footer {
+    background-color: #232F3E;
+}
 .tapForTop {
     margin-top: 20px;
     display: flex;
@@ -407,33 +388,89 @@ hr {
     font-size: 1rem;
     color: white;
 }
-
-.topFoter {
-    padding-top: 3rem;
-    color: white;
-    background-color: #232F3E;
+.topFooter {
+    flex-wrap: wrap;
+    white-space: nowrap;
+    padding: 3rem 0;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
-
-.topFoter ul {
+.topFooter p {
+    font-weight: 600;
+    color: white;
+    margin: 6px 0 14px;
+    font-size: 1rem;
+}
+.topFooter ul {
     list-style: none;
 }
-.topFoter ul li {
+.topFooter ul li {
     margin-top: 1rem;
 }
-.topFoter ul li a {
-    color: rgb(192, 192, 192);
+.topFooter ul li a {
+    white-space: normal;
+    font-size: 0.80rem;
+    color: #DDDDDD;
 }
-.topFoter ul li a:hover {
+.topFooter ul li a:hover {
     text-decoration: underline;
 }
-
 .middleFooter {
-    background-color: #232F3E;
-    height: 60px;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(233, 233, 233, 0.522);
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+.middleFooter a {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border: 2px solid rgba(209, 209, 209, 0.784);
+    border-radius: 5px;
+    padding: 0.80rem;
+    margin-left: 1rem;
+}
+.mainFooter {
+    background-color: #131A22;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+.mainFooterContent {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.mainFooterItem {
+    margin-top: 15px;
+}
+.lastFooter {
+    text-align: center;
+    margin-top: 2rem;
+}
+.ConditionPrivacy a {
+    font-size: 0.80rem;
+    padding: 0 0.80rem;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+.ConditionPrivacy img {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    width: 2rem;
+}
+.ConditionPrivacy a:hover {
+    text-decoration: underline;
+}
+.lastFooter p {
+    padding-top: 1.5rem;
+    font-size: 0.80rem;
+    color: #DDDDDD;
 }
